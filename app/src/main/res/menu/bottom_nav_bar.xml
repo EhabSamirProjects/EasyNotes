@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/miNotes"
+        android:title="notes"
+        android:icon="@drawable/ic_notes"
+        />
+
+    <item
+        android:id="@+id/miTodo"
+        android:title="To-do"
+        android:icon="@drawable/ic_check"
+        />
+
+    <item
+        android:id="@+id/miRecords"
+        android:title="records"
+        android:icon="@drawable/ic_records"
+        />
+
+    <item
+        android:id="@+id/miPhotos"
+        android:title="photos"
+        android:icon="@drawable/ic_photos"
+        />
+
+
+</menu>

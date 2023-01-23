@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.easytools.notesfree">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_diary"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_diary_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EasyNotes"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="//paste your application id"/>
+
+        <provider
+            android:name="com.easytools.notesfree.GenericFileProvider"
+            android:authorities="${applicationId}.my.package.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+
+        <activity
+            android:name="com.easytools.notesfree.InformationActivity"
+            android:exported="false"
+            android:theme="@style/themeTwo"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.easytools.notesfree.notesFragment.NewNoteActivity"
+            android:exported="false"
+            android:theme="@style/themeTwo"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.easytools.notesfree.recordsFragment.NewRecordActivity"
+            android:exported="false"
+            android:theme="@style/themeTwo"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.easytools.notesfree.todoFragment.NewTodoActivity"
+            android:exported="false"
+            android:theme="@style/themeTwo"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.easytools.notesfree.photosFragment.FullscreenActivity"
+            android:exported="false"
+            android:theme="@style/themeTwo" />
+        <activity
+            android:name="com.easytools.notesfree.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

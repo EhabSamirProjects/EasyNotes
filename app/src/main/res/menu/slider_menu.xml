@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/miUpgrade"
+        android:title="No Ads"
+        android:icon="@drawable/no_ads"
+        />
+
+        <item
+            android:id="@+id/miNightMode"
+            android:title="Night Mode"
+            android:icon="@drawable/ic_dark_mode"
+            app:actionLayout="@layout/action_view_switch"
+            />
+
+        <item
+            android:id="@+id/miAutoSave"
+            android:title="Auto Safe Save"
+            android:icon="@drawable/ic_auto"
+            app:actionLayout="@layout/action_view_switch"
+            />
+
+        <item
+            android:id="@+id/miCheckSound"
+            app:actionLayout="@layout/action_view_checkbox"
+            android:title="Check Sound"
+            android:icon="@drawable/sound_black"
+            />
+
+        <item
+            android:id="@+id/miSortItemsBy"
+            android:title="Sort Items By"
+            android:icon="@drawable/ic_sort_by"
+            app:actionLayout="@layout/action_view_more_horiz"
+            />
+
+    <group android:id="@+id/mgAnotherItems">
+
+        <item
+            android:id="@+id/miInformation"
+            android:title="information"
+            android:icon="@drawable/info"
+            />
+        <item
+            android:id="@+id/miRate"
+            android:title="Rate"
+            android:icon="@drawable/ic_rate"
+            />
+
+        <item
+            android:id="@+id/miOurApps"
+            android:title="Our Apps"
+            android:icon="@drawable/ic_apps"
+            />
+
+        <item
+            android:id="@+id/miShareApp"
+            android:title="Share"
+            android:icon="@drawable/ic_share"
+            />
+
+    </group>
+
+
+</menu>

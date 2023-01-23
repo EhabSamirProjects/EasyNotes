@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformationActivity"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Auto Save Feature"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Auto save feature is for safety for any sudden closing for that Notes app like
+phone shutdown, closing that Notes app from recent apps menu or otherwise.
+\nIf you was writing a new note or todo and you closed Notes app wrongly, your note or todo will be saved
+\nIf you was modifying an old note or todo and you closed Notes app wrongly, your old note or todo will
+remain as was and your entire modification will be saved in a new note or todo"
+        />
+
+</LinearLayout>
